@@ -33,12 +33,9 @@ echo '
   // display the logo in top left of each page. This will be $logo you setup in config.inc.php. //
   // It will also link you back to your index page. //
 echo '    <!-- Logo -->
-    <a href="index.php" class="logo">
-      <!-- mini logo for sidebar mini 50x50 pixels -->
-      <span class="logo-mini"><b>A</b><i class="fa fa-clock-o"></i></span>
-      <!-- logo for regular state and mobile devices -->';
+    <a href="index.php" class="logo">';
 if ($logo == "none") {     echo '<span class="logo-lg"><b>PHP</b> <i class="fa fa-clock-o"></i> Timeclock</span></a>'; }
-else { echo "<span class='logo-lg'><img border='0' src='$logo'></span></a>"; }
+else { echo "<span class='logo-lg'><img border='0' src='$logo' style='max-height:100%; max-width:100%;'></span></a>"; }
 
 include '../theme/templates/topnavpart1.inc';
 
