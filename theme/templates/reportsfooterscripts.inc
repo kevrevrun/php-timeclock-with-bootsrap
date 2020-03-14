@@ -33,13 +33,13 @@
 //Date picker
     $('#datepicker').datepicker({
       autoclose: true,
-      format: 'd/m/yyyy',
+      format: 'm/d/yyyy',
  weekStart: 1,
 	    todayHighlight: true
     });
     $('#datepicker1').datepicker({
       autoclose: true,
-      format: 'd/m/yyyy',
+      format: 'm/d/yyyy',
        weekStart: 1,
 	    todayHighlight: true
     });
