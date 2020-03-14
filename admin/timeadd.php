@@ -126,9 +126,14 @@ echo'    <div class="bootstrap-timepicker">
     	                   <div class="form-group">
     	                     <label>Time: ('.$timefmt_24hr_text.')</label>';
 
-echo'    	                     <div class="input-group">
+if($timefmt_24hr == '1'){
+	echo'    	                     <div class="input-group">
     	                       <input type="text" size="10" maxlength="10" class="form-control timepicker" name="post_time">';
-echo'    	                       <div class="input-group-addon">
+}else{
+	echo'    	                     <div class="input-group">
+    	                       <input type="text" size="10" maxlength="10" class="form-control timepicker3" name="post_time">';
+}
+	echo'    	                       <div class="input-group-addon">
     	                         <i class="fa fa-clock-o"></i>
     	                       </div>
     	                     </div>
@@ -186,7 +191,7 @@ echo'    	                       <div class="input-group-addon">
     include '../footer.php';
 	include '../theme/templates/controlsidebar.inc'; 
 	include '../theme/templates/endmain.inc';
-	include '../theme/templates/reportsfooterscripts.inc';
+	include '../theme/templates/adminfooterscripts.inc';
     exit;
 } elseif ($request == 'POST') { // Add the time for the employee
     $get_user = stripslashes($_POST['get_user']);
