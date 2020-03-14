@@ -52,11 +52,6 @@ if (empty($company_name) || empty($app_version)) {
 
 echo '
 	</div>
-<!-- Default to the left -->
-
-Powered by <a class="footer_links" href="http://nginx.org/">NGINX</a> &nbsp;&#177 <a class="footer_links" href="http://mysql.org">mysql</a>&nbsp;&#177
-<a class="footer_links" href="http://php.net">&nbsp;PHP</a> &nbsp;&#8226; <a class="footer_links" href="https://almsaeedstudio.com">AdminLTE theme</a> &nbsp;&#177 <a class="footer_links" href="http://getbootstrap.com">Bootstrap</a>
-
  </footer>
 ';
 
